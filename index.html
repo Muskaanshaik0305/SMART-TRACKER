@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO LIST</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <h1>SMART TRACKER</h1>
+
+    <div class="input-section">
+
+        <div class="form-group">
+            <label for="taskInput">Task Name</label>
+            <input type="text" id="taskInput" placeholder="Enter task">
+        </div>
+
+        <div class="form-group">
+            <label for="taskTime">Time</label>
+            <input type="time" id="taskTime">
+        </div>
+
+        <div class="form-group button-group">
+            <button onclick="addTask()" class="btn-primary">Add</button>
+        </div>
+
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Done</th>
+                <th>Task</th>
+                <th>Time</th>
+                <th>Status</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody id="taskTable"></tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

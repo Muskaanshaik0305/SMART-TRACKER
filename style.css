@@ -1,0 +1,132 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f6f9;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+    width: 100%;
+    max-width: 700px;
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* ===== TITLE ===== */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* ===== INPUT SECTION ===== */
+.input-section {
+    display: flex;
+    gap: 15px;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.form-group label {
+    font-size: 13px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-group input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* ===== BUTTON ===== */
+.button-group {
+    flex: 0;
+}
+
+.btn-primary {
+    padding: 10px 15px;
+    height: 40px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background: #0056b3;
+}
+
+/* ===== TABLE ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+thead {
+    background: #007bff;
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+tbody tr {
+    border-bottom: 1px solid #eee;
+}
+
+tbody tr:hover {
+    background: #f9f9f9;
+}
+
+/* ===== FIX TIME COLUMN ===== */
+th:nth-child(3),
+td:nth-child(3) {
+    width: 120px;
+}
+
+/* ===== STATUS ===== */
+.status.completed {
+    color: green;
+    font-weight: bold;
+}
+
+.status.pending {
+    color: red;
+    font-weight: bold;
+}
+
+/* ===== DELETE BUTTON ===== */
+.btn-delete {
+    background: red;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-delete:hover {
+    background: darkred;
+}
